@@ -16,7 +16,7 @@ def execute_second(input_str):
     pass
 
 def test_easy_input_first(input_str_trivial):
-	assert execute_first(input_str_trivial) == ""
+    assert execute_first(input_str_trivial) == ""
     #ADD MORE TESTS HERE
 
 
@@ -26,10 +26,10 @@ def test_easy_input_second(input_str_trivial):
 
 if __name__ == '__main__':
     test_easy_input_first(input_str_trivial)
-	test_easy_input_second(input_str_trivial)
+    test_easy_input_second(input_str_trivial)
 
-	print(execute_first(input_str))
-	print(execute_second(input_str))
+    print(execute_first(input_str))
+    print(execute_second(input_str))
 """
 
 path = f"src/{n:02d}.py"
