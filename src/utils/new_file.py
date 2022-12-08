@@ -7,7 +7,7 @@ n = int(sorted(l)[-1][:2]) + 1 if len(l) > 0 else 1
 DEFAULT_FILE = f"""from utils.api import get_input
 
 input_str = get_input({n})
-input_str_trivial = ''
+input_str_trivial = \"\"\"\"\"\"
 
 def execute_first(input_str):
     pass
@@ -21,7 +21,7 @@ def test_easy_input_first(input_str_trivial):
 
 
 def test_easy_input_second(input_str_trivial):
-    assert execute_first(input_str_trivial) == ""
+    assert execute_second(input_str_trivial) == ""
     #ADD MORE TESTS HERE
 
 if __name__ == '__main__':
